@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Demonstration</title>
+    <style>
+        #save-btn{
+            background-color: red;
+            color:white;
+            font-size: 20px;
+            padding: 10px;
+            border:hidden;
+            border-radius: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="button" id="save-btn" onclick="changeBackground()" value="Save"></input>
+    </div>
+
+    <script>
+      function changeBackground() {
+            document.getElementById("save-btn").value = "Saved";
+            document.getElementById("save-btn").style.backgroundColor = "black";
+      }
+    </script>
+  </body>
+</html>
